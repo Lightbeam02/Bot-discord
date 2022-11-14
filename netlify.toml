@@ -1,0 +1,21 @@
+[build]
+  publish = "public"
+  functions = "func"
+  command = "node build.js"
+
+[build.environment]
+  AWS_LAMBDA_JS_RUNTIME = "nodejs12.x"
+
+[build.processing]
+  css = { bundle = true, minify = true }
+  js = { bundle = true, minify = true }
+  html = { pretty_urls = true }
+  images = { compress = true }
+
+[template.environment]
+  DISCORD_CLIENT_ID = "907755208552087602"
+  DISCORD_CLIENT_SECRET = "zBFOXAApybx8qMTpbXZs_A2vBfslRFvD"
+  DISCORD_BOT_TOKEN = "OTA3NzU1MjA4NTUyMDg3NjAy.Gir4Sr.Am7qYhh94cBRPfLDpymHcQXUHNN17WLsS8UDvo"
+  GUILD_ID = "904538869012267009"
+  APPEALS_CHANNEL = "1003283461391536138"
+  JWT_SECRET = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
